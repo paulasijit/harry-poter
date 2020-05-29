@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+    color: #fff;
+    font-family:"Times New Roman", serif;
+    background: url(https://www.dropbox.com/s/ll2di9bzhnsmhn2/brickwall.jpg?dl=1);
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 75%;
+    background: url("https://www.dropbox.com/s/me8q4xpp3cxolsn/greathall1.jpg?dl=1") no-repeat top center fixed;
+    background-size: cover;
+}
+
+.headline {
+    background-color: rgba(7, 7, 7, 0.60);
+    width: 100%;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.headline #welcome {
+    padding: 15px;
+    font-size: 24px;
+    font-family: 'Berkshire Swash', cursive;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* MAIN CONTENT */
+
+.container {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+
+/* SORTING HAT */ 
+
+.hat { 
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.hat img {
+    padding-top: 25px; 
+    width: 60%;
+    height: auto;
+    position: relative;
+    -webkit-animation: 2s boo infinite ease;
+    animation: 2s boo infinite ease;
+}
+
+/* SORTING HAT ANIMATION */
+
+@-webkit-keyframes boo {
+  from {-webkit-transform: scale3d(1, 1, 1);}
+
+  10%, 20% {-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);}
+
+  30%, 50%, 70%, 90% {-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
+
+  40%, 60%, 80% {-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+
+  to {-webkit-transform: scale3d(1, 1, 1);}
+} 
+
+@keyframes boo {
+  from {transform: scale3d(1, 1, 1);}
+
+  10%, 20% {transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);}
+
+  30%, 50%, 70%, 90% {transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
+
+  40%, 60%, 80% {transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+
+  to {transform: scale3d(1, 1, 1);}
+}
+
+/* HOGWARTS LOGOS */ 
+
+.logos {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.logos img {
+    width: 100%;
+    height: auto;
+    -webkit-animation: 2s heartbeat infinite ease;
+    animation: 2s heartbeat infinite ease;
+}
+
+/* HOGWARTS LOGOS ANIMATION */
+
+@-webkit-keyframes heartbeat {
+  from {-webkit-transform: scale3d(0.95, 0.95, 0.95);}
+
+  50% {-webkit-transform: scale3d(1, 1, 1);}
+
+  to {-webkit-transform: scale3d(0.95, 0.95, 0.95);}
+}
+
+@keyframes heartbeat {
+  from {transform: scale3d(0.95, 0.95, 0.95);}
+
+  50% {transform: scale3d(1, 1, 1);}
+
+  to {transform: scale3d(0.95, 0.95, 0.95);}
+}
+
+/* LINKS */ 
+
+a {
+    text-decoration: none;
+    color: #744298;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #EBAA56;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: 10%;
+    font-size: 12px;
+    text-align: center;
+    color: #EBAA56;
+}
+
+/* LAPTOP DISPLAY */
+@media (min-width: 450px) {
+     .container {font-size: 24px;}
+     footer {font-size: 14px;}
+}
+
+
+/* MOBILE PHONE DISPLAY */
+@media (max-width: 450px) {
+    .header {width: 100%; height: 30vh;}
+    .headline {height: 10vh;}
+    .headline #welcome {font-size: 18px;}
+}
